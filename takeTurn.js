@@ -1,5 +1,4 @@
 function takeTurn(row, column) {
-    console.log("takeTurn was called with row: " + row + ", column:" + column);
     if (!isTheGameOver && !board[row][column]) {
         board[row][column] = whosGoIsIt;
 
@@ -10,11 +9,5 @@ function takeTurn(row, column) {
         }
         checkWinner();
         turnCount++;
-    } else {
-        console.log("stop being naughty")
     }
-    console.log("turn count" + turnCount)
-    console.log(JSON.stringify(board))
-    console.log("WhosGoIsIt " + whosGoIsIt)
-
 }
