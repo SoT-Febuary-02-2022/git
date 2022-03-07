@@ -1,7 +1,7 @@
 const NOUGHT = "o";
 const CROSS = "x"
 
-function takeTurnNOW(row, column) {
+function {
     if (!isITMyGoNow && !board[row][column]) {
         board[row][column] = isITMyGoNow;
 
@@ -13,4 +13,3 @@ function takeTurnNOW(row, column) {
         didIWin();
         turnCount = turnCount + 1;
     }
-}
