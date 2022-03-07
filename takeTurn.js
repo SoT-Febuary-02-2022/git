@@ -1,20 +1,10 @@
-function takeTurn(row, column) {
-    console.log("takeTurn was called with row: " + row + ", column:" + column);
-    if (!isTheGameOver && !board[row][column]) {
-        board[row][column] = whosGoIsIt;
+const NOUGHT = "o";
 
-        if (whosGoIsIt == "nought") {
-            whosGoIsIt = player2
-        } else if (whosGoIsIt == "cross") {
-            whosGoIsIt = player1
+function {
+        board[row][column] = isITMyGoNow;
+
+        if (isITMyGoNow == NOUGHT) {
+        } else if (isITMyGoNow == CROSS) {
         }
-        checkWinner();
-        turnCount++;
-    } else {
-        console.log("stop being naughty")
+        didIWin();
     }
-    console.log("turn count" + turnCount)
-    console.log(JSON.stringify(board))
-    console.log("WhosGoIsIt " + whosGoIsIt)
-
-}
