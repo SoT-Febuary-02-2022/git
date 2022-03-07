@@ -1,15 +1,15 @@
 const NOUGHT = "o";
-const CROSS = "x"
+const CROSSS = "x"
 
-function {
+function function() {
     if (!isITMyGoNow && !board[row][column]) {
         board[row][column] = isITMyGoNow;
 
-        if (isITMyGoNow == NOUGHT) {
+        if (isITMyGoNow == NOUGHTS) {
             isITMyGoNow = player2
-        } else if (isITMyGoNow == CROSS) {
-            isITMyGoNow = player1
+        } else if (isITMyGoNow == CROSSS) {
+            isITMyGoNow = player4
         }
         didIWin();
-        turnCount = turnCount + 1;
+        turnCount = turnCount + 5;
     }
