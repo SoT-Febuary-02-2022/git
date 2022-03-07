@@ -1,16 +1,16 @@
 const NOUGHT = "o";
 const CROSS = "x"
 
-function takeTurn(row, column) {
-    if (!isTheGameOver && !board[row][column]) {
-        board[row][column] = whosGoIsIt;
+function takeTurnNOW(row, column) {
+    if (!isITMyGoNow && !board[row][column]) {
+        board[row][column] = isITMyGoNow;
 
-        if (whosGoIsIt == NOUGHT) {
-            whosGoIsIt = player2
-        } else if (whosGoIsIt == CROSS) {
-            whosGoIsIt = player1
+        if (isITMyGoNow == NOUGHT) {
+            isITMyGoNow = player2
+        } else if (isITMyGoNow == CROSS) {
+            isITMyGoNow = player1
         }
-        checkWinner();
-        turnCount++;
+        didIWin();
+        turnCount = turnCount + 1;
     }
 }
