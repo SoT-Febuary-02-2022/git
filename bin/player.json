@@ -1,0 +1,14 @@
+{
+    "player1": {
+        "score": 0,
+        "gamesPlayed": 0,
+        "gameName": "player-one",
+        "colour": "Red"
+    },
+    "player2": {
+        "score": 0,
+        "gamesPlayed": 0,
+        "gameName": "player-one",
+        "colour": "Red"
+    }
+}
